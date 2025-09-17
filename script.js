@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(modal) {
         modal.querySelector('#modalForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Cita agendada (simulación). ¡Nos pondremos en contacto contigo!');
+            alert('Cita agendada. ¡Nos pondremos en contacto contigo!');
             closeModal();
         });
     }
@@ -188,4 +188,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('cart-items')) renderCartPage();
     if (document.getElementById('service-grid')) renderServices();
     if (document.getElementById('summary-items')) renderCheckoutSummary();
+
 });
