@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - VetShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css"> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">VetShop 🐾</a>
+            <div class="header-icons">
+                <a href="carrito.html" class="cart-icon">
+                    <span>Volver al Carrito</span>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <h1>Finalizar Compra</h1>
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <form id="payment-form">
+                    <h3>Datos de Envío</h3>
+                    <div class="form-group">
+                        <label for="fullName">Nombre Completo</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Dirección de Envío</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    
+                    <h3>Datos de Pago (Simulación)</h3>
+                    <div class="form-group">
+                        <label for="cardName">Nombre en la Tarjeta</label>
+                        <input type="text" id="cardName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Número de Tarjeta</label>
+                        <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="width: 100%;">Pagar Ahora</button>
+                </form>
+            </div>
+
+            <div class="checkout-summary">
+                <h3>Resumen de tu Pedido</h3>
+                <div id="summary-items">
+                    </div>
+                <hr>
+                <div id="summary-total">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

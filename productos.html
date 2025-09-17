@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetShop</title>
+    <link rel="icon" href="images/logo3.png" type="image/png"> <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo3.png" alt="VetShop Logo" class="header-logo"> </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="login.html">Mi Cuenta</a>
+                <a href="carrito.html" class="cart-icon">
+                    <span>Carrito</span>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="page-content">
+        <h1>Todos Nuestros Productos</h1>
+        <div id="all-product-grid" class="product-grid"></div>
+    </main>
+    <footer><p>&copy; 2025 VetShop. Todos los derechos reservados.</p></footer>
+    <div id="formModal" class="modal"><div class="modal-content"><span class="close-button">&times;</span><h2 id="modalTitle"></h2><form id="modalForm"><div id="formBody"></div><button type="submit" class="btn-primary">Confirmar</button></form></div></div>
+    <script src="script.js" defer></script>
+</body>
+</html>
